@@ -11,6 +11,7 @@
 		32E6FF292A586BF30081E31B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E6FF282A586BF30081E31B /* SceneDelegate.swift */; };
 		32E6FF2B2A586BF30081E31B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E6FF2A2A586BF30081E31B /* ViewController.swift */; };
 		32E6FF302A586BF30081E31B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32E6FF2F2A586BF30081E31B /* Assets.xcassets */; };
+		675E693A511B58876F1D16AE /* Pods_OneFootball.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656E6593CF595F06ABC5E572 /* Pods_OneFootball.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,9 @@
 		32E6FF2A2A586BF30081E31B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		32E6FF2F2A586BF30081E31B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32E6FF342A586BF30081E31B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		656E6593CF595F06ABC5E572 /* Pods_OneFootball.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneFootball.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3300F3A8C5A9BAC92CA5872 /* Pods-OneFootball.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneFootball.debug.xcconfig"; path = "Target Support Files/Pods-OneFootball/Pods-OneFootball.debug.xcconfig"; sourceTree = "<group>"; };
+		F426F271D5F568D0FCD78575 /* Pods-OneFootball.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneFootball.release.xcconfig"; path = "Target Support Files/Pods-OneFootball/Pods-OneFootball.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				675E693A511B58876F1D16AE /* Pods_OneFootball.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +43,8 @@
 			children = (
 				32E6FF252A586BF30081E31B /* OneFootball */,
 				32E6FF242A586BF30081E31B /* Products */,
+				AD3E80B773198852A8F6036C /* Pods */,
+				7A486889D15D822C8C7EBFFA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +68,24 @@
 			path = OneFootball;
 			sourceTree = "<group>";
 		};
+		7A486889D15D822C8C7EBFFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				656E6593CF595F06ABC5E572 /* Pods_OneFootball.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD3E80B773198852A8F6036C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3300F3A8C5A9BAC92CA5872 /* Pods-OneFootball.debug.xcconfig */,
+				F426F271D5F568D0FCD78575 /* Pods-OneFootball.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -68,9 +93,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32E6FF372A586BF30081E31B /* Build configuration list for PBXNativeTarget "OneFootball" */;
 			buildPhases = (
+				A70D95294CC1EDF0BA1F4B1E /* [CP] Check Pods Manifest.lock */,
 				32E6FF1F2A586BF30081E31B /* Sources */,
 				32E6FF202A586BF30081E31B /* Frameworks */,
 				32E6FF212A586BF30081E31B /* Resources */,
+				A24E989C786C0AF29EA60D95 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,6 +151,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A24E989C786C0AF29EA60D95 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OneFootball/Pods-OneFootball-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OneFootball/Pods-OneFootball-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OneFootball/Pods-OneFootball-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A70D95294CC1EDF0BA1F4B1E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneFootball-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		32E6FF1F2A586BF30081E31B /* Sources */ = {
@@ -255,6 +324,7 @@
 		};
 		32E6FF382A586BF30081E31B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3300F3A8C5A9BAC92CA5872 /* Pods-OneFootball.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -282,6 +352,7 @@
 		};
 		32E6FF392A586BF30081E31B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F426F271D5F568D0FCD78575 /* Pods-OneFootball.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
