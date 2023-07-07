@@ -7,7 +7,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
-  - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`)
+  - ChameleonFramework/Swift (from `https://github.com/luckychris/Chameleon.git`)
   - SnapKit
 
 SPEC REPOS:
@@ -17,18 +17,18 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   ChameleonFramework:
-    :git: https://github.com/ViccAlexander/Chameleon.git
+    :git: https://github.com/luckychris/Chameleon.git
 
 CHECKOUT OPTIONS:
   ChameleonFramework:
-    :commit: 6dd284bde21ea2e7f9fd89bc36f40df16e16369d
-    :git: https://github.com/ViccAlexander/Chameleon.git
+    :commit: 347fcaa815f60281f9fbd32620c42d384dfc9b44
+    :git: https://github.com/luckychris/Chameleon.git
 
 SPEC CHECKSUMS:
   Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
 
-PODFILE CHECKSUM: d960763cbfdb2564af3c679f46a1363034d89ae2
+PODFILE CHECKSUM: d3c9123feff8c6858ab398584799bb95e96cc9eb
 
 COCOAPODS: 1.11.3

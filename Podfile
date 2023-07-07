@@ -6,7 +6,7 @@ target 'OneFootball' do
   use_frameworks!
 
   # Pods for OneFootball
-	pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
+	pod 'ChameleonFramework/Swift', :git => 'https://github.com/luckychris/Chameleon.git', :inhibit_warnings => true
 	pod 'Alamofire'
 	pod 'SnapKit'
 
