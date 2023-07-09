@@ -11,6 +11,15 @@ import SnapKit
 final class OnboardingViewController: UIViewController {
     
     private let backgroundImages: [UIImage] = [UIImage(named: "messi")!, UIImage(named: "ronaldo")!, UIImage(named: "torres")!, UIImage(named: "spain")!]
+    
+    private let appMainFeaturesTexts: [String] = ["Explore Live Match Updates",
+                                                  "Stay Informed with News and Analysis",
+                                                  "Discover Exclusive Football Content",
+                                                  "Connect with a Football Community"]
+    private let appMainFeaturesDescriptionsTexts: [String] = ["Stay up-to-date with real-time match scores, team line-ups, and key events as they happen",
+                                                              "Access comprehensive football news, in-depth analysis, and expert opinions from trusted sources",
+                                                              "Immerse yourself in a world of personalized news, video highlights, and behind-the-scenes access",
+                                                              "Connect with like-minded fans from around the world and celebrate the beautiful game together"]
         
     private lazy var onboardingCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -62,7 +71,7 @@ final class OnboardingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBackground
+        navigationController?.navigationBar.isHidden = true
         layout()
     }
     
@@ -109,11 +118,19 @@ final class OnboardingViewController: UIViewController {
         }
     }
     
+    @objc private func skipButtonClicked() {
+        navigationController?.dismiss(animated: false)
+        navigationController?.pushViewController(SignUpModuleBuilder.build(), animated: false)
+    }
+    
     @objc private func nextButtonClicked() {
         let visibleCellIndexPathRow = onboardingCollectionView.indexPathsForVisibleItems.first!.row
         
         if visibleCellIndexPathRow != 3 {
             onboardingCollectionView.scrollToItem(at: IndexPath(row: visibleCellIndexPathRow + 1, section: 0), at: [], animated: false)
+        } else {
+            navigationController?.dismiss(animated: false)
+            navigationController?.pushViewController(SignUpModuleBuilder.build(), animated: false)
         }
         
         switch visibleCellIndexPathRow {
@@ -142,8 +159,11 @@ extension OnboardingViewController: UICollectionViewDataSource, UICollectionView
         
         let cell = onboardingCollectionView.dequeueReusableCell(withReuseIdentifier: "OnboardingCollectionViewCell", for: indexPath) as! OnboardingCollectionViewCell
         
+        cell.skipButton.addTarget(self, action: #selector(skipButtonClicked), for: .touchUpInside)
         cell.nextButton.addTarget(self, action: #selector(nextButtonClicked), for: .touchUpInside)
         cell.backgroundImageView.image = backgroundImages[indexPath.row]
+        cell.mainFeatureLabel.text = appMainFeaturesTexts[indexPath.row]
+        cell.mainFeatureDescriptionLabel.text = appMainFeaturesDescriptionsTexts[indexPath.row]
         
         return cell
     }

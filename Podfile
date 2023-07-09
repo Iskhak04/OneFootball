@@ -9,5 +9,9 @@ target 'OneFootball' do
 	pod 'ChameleonFramework/Swift', :git => 'https://github.com/luckychris/Chameleon.git', :inhibit_warnings => true
 	pod 'Alamofire'
 	pod 'SnapKit'
+	pod 'FirebaseAnalytics'
+	pod 'FirebaseAuth'
+	pod 'FirebaseDatabase'
+	pod 'FirebaseStorage'
 
 end

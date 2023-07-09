@@ -34,7 +34,6 @@ final class OnboardingCollectionViewCell: UICollectionViewCell {
     
     lazy var mainFeatureLabel: UILabel = {
         let label = UILabel()
-        label.text = "Private sync across your devices"
         label.textColor = .systemBackground
         label.textAlignment = .center
         label.numberOfLines = 0
@@ -45,7 +44,6 @@ final class OnboardingCollectionViewCell: UICollectionViewCell {
     
     lazy var mainFeatureDescriptionLabel: UILabel = {
         let label = UILabel()
-        label.text = "This is a subscript that describes this feature in a better way"
         label.textColor = .systemBackground
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
@@ -90,15 +88,15 @@ final class OnboardingCollectionViewCell: UICollectionViewCell {
             make.top.equalToSuperview().offset(10)
             make.left.equalToSuperview().offset(20)
             make.right.equalToSuperview().offset(-20)
-            make.height.equalTo(100)
+            make.height.equalTo(86)
         }
         
         bottomView.addSubview(mainFeatureDescriptionLabel)
         mainFeatureDescriptionLabel.snp.makeConstraints { make in
-            make.top.equalTo(mainFeatureLabel.snp.bottom).offset(10)
+            make.top.equalTo(mainFeatureLabel.snp.bottom).offset(5)
             make.left.equalToSuperview().offset(20)
             make.right.equalToSuperview().offset(-20)
-            make.height.equalTo(60)
+            make.height.equalTo(80)
         }
         
         bottomView.addSubview(nextButton)

@@ -10,6 +10,7 @@
 		323C6AA92A587D18004264BE /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323C6AA82A587D17004264BE /* OnboardingViewController.swift */; };
 		323C6AAC2A587E96004264BE /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323C6AAB2A587E96004264BE /* OnboardingCollectionViewCell.swift */; };
 		323C6AE72A5886F7004264BE /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323C6AE62A5886F7004264BE /* Fonts.swift */; };
+		3250D0412A5A7890008BD20F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3250D0402A5A7890008BD20F /* GoogleService-Info.plist */; };
 		327D37522A599E440077FFC2 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 327D37402A599E430077FFC2 /* Montserrat-ExtraLight.ttf */; };
 		327D37532A599E440077FFC2 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 327D37412A599E430077FFC2 /* Montserrat-Medium.ttf */; };
 		327D37542A599E440077FFC2 /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 327D37422A599E430077FFC2 /* Montserrat-ExtraLightItalic.ttf */; };
@@ -28,9 +29,14 @@
 		327D37612A599E440077FFC2 /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 327D374F2A599E440077FFC2 /* Montserrat-BoldItalic.ttf */; };
 		327D37622A599E440077FFC2 /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 327D37502A599E440077FFC2 /* Montserrat-BlackItalic.ttf */; };
 		327D37632A599E440077FFC2 /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 327D37512A599E440077FFC2 /* Montserrat-Italic.ttf */; };
+		32C0A9C32A5A7D230045E1D2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C0A9C22A5A7D230045E1D2 /* SignUpViewController.swift */; };
+		32C0A9C52A5A7D280045E1D2 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C0A9C42A5A7D280045E1D2 /* SignUpPresenter.swift */; };
+		32C0A9C72A5A7D2D0045E1D2 /* SignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C0A9C62A5A7D2D0045E1D2 /* SignUpInteractor.swift */; };
+		32C0A9C92A5A7D310045E1D2 /* SignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C0A9C82A5A7D310045E1D2 /* SignUpRouter.swift */; };
+		32C0A9CB2A5A7D360045E1D2 /* SignUpModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C0A9CA2A5A7D360045E1D2 /* SignUpModuleBuilder.swift */; };
+		32C0A9CD2A5A7D3F0045E1D2 /* SignUpProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C0A9CC2A5A7D3F0045E1D2 /* SignUpProtocols.swift */; };
 		32E6FF272A586BF30081E31B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E6FF262A586BF30081E31B /* AppDelegate.swift */; };
 		32E6FF292A586BF30081E31B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E6FF282A586BF30081E31B /* SceneDelegate.swift */; };
-		32E6FF2B2A586BF30081E31B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E6FF2A2A586BF30081E31B /* ViewController.swift */; };
 		32E6FF302A586BF30081E31B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32E6FF2F2A586BF30081E31B /* Assets.xcassets */; };
 		675E693A511B58876F1D16AE /* Pods_OneFootball.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656E6593CF595F06ABC5E572 /* Pods_OneFootball.framework */; };
 /* End PBXBuildFile section */
@@ -39,6 +45,7 @@
 		323C6AA82A587D17004264BE /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		323C6AAB2A587E96004264BE /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		323C6AE62A5886F7004264BE /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		3250D0402A5A7890008BD20F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		327D37402A599E430077FFC2 /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
 		327D37412A599E430077FFC2 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		327D37422A599E430077FFC2 /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
@@ -57,10 +64,15 @@
 		327D374F2A599E440077FFC2 /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
 		327D37502A599E440077FFC2 /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
 		327D37512A599E440077FFC2 /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
+		32C0A9C22A5A7D230045E1D2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		32C0A9C42A5A7D280045E1D2 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		32C0A9C62A5A7D2D0045E1D2 /* SignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInteractor.swift; sourceTree = "<group>"; };
+		32C0A9C82A5A7D310045E1D2 /* SignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRouter.swift; sourceTree = "<group>"; };
+		32C0A9CA2A5A7D360045E1D2 /* SignUpModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModuleBuilder.swift; sourceTree = "<group>"; };
+		32C0A9CC2A5A7D3F0045E1D2 /* SignUpProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpProtocols.swift; sourceTree = "<group>"; };
 		32E6FF232A586BF30081E31B /* OneFootball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneFootball.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32E6FF262A586BF30081E31B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32E6FF282A586BF30081E31B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		32E6FF2A2A586BF30081E31B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		32E6FF2F2A586BF30081E31B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32E6FF342A586BF30081E31B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		656E6593CF595F06ABC5E572 /* Pods_OneFootball.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneFootball.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +103,7 @@
 		323C6AA52A587CC4004264BE /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				32C0A9C12A5A7D0A0045E1D2 /* Sign Up */,
 				323C6AA72A587CEA004264BE /* Onboarding */,
 			);
 			path = Modules;
@@ -162,6 +175,19 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		32C0A9C12A5A7D0A0045E1D2 /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				32C0A9C22A5A7D230045E1D2 /* SignUpViewController.swift */,
+				32C0A9C42A5A7D280045E1D2 /* SignUpPresenter.swift */,
+				32C0A9C62A5A7D2D0045E1D2 /* SignUpInteractor.swift */,
+				32C0A9C82A5A7D310045E1D2 /* SignUpRouter.swift */,
+				32C0A9CA2A5A7D360045E1D2 /* SignUpModuleBuilder.swift */,
+				32C0A9CC2A5A7D3F0045E1D2 /* SignUpProtocols.swift */,
+			);
+			path = "Sign Up";
+			sourceTree = "<group>";
+		};
 		32E6FF1A2A586BF30081E31B = {
 			isa = PBXGroup;
 			children = (
@@ -189,7 +215,7 @@
 				323C6AA62A587CCB004264BE /* Application */,
 				323C6AA52A587CC4004264BE /* Modules */,
 				323C6AA42A587CBC004264BE /* Resources */,
-				32E6FF2A2A586BF30081E31B /* ViewController.swift */,
+				3250D0402A5A7890008BD20F /* GoogleService-Info.plist */,
 				32E6FF342A586BF30081E31B /* Info.plist */,
 			);
 			path = OneFootball;
@@ -289,6 +315,7 @@
 				327D37562A599E440077FFC2 /* Montserrat-MediumItalic.ttf in Resources */,
 				327D37582A599E440077FFC2 /* Montserrat-SemiBold.ttf in Resources */,
 				327D375F2A599E440077FFC2 /* Montserrat-ExtraBoldItalic.ttf in Resources */,
+				3250D0412A5A7890008BD20F /* GoogleService-Info.plist in Resources */,
 				327D37522A599E440077FFC2 /* Montserrat-ExtraLight.ttf in Resources */,
 				327D375D2A599E440077FFC2 /* Montserrat-Light.ttf in Resources */,
 			);
@@ -343,12 +370,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32E6FF2B2A586BF30081E31B /* ViewController.swift in Sources */,
+				32C0A9C92A5A7D310045E1D2 /* SignUpRouter.swift in Sources */,
+				32C0A9CD2A5A7D3F0045E1D2 /* SignUpProtocols.swift in Sources */,
+				32C0A9C32A5A7D230045E1D2 /* SignUpViewController.swift in Sources */,
 				32E6FF272A586BF30081E31B /* AppDelegate.swift in Sources */,
+				32C0A9C72A5A7D2D0045E1D2 /* SignUpInteractor.swift in Sources */,
 				323C6AAC2A587E96004264BE /* OnboardingCollectionViewCell.swift in Sources */,
 				32E6FF292A586BF30081E31B /* SceneDelegate.swift in Sources */,
+				32C0A9C52A5A7D280045E1D2 /* SignUpPresenter.swift in Sources */,
 				323C6AE72A5886F7004264BE /* Fonts.swift in Sources */,
 				323C6AA92A587D18004264BE /* OnboardingViewController.swift in Sources */,
+				32C0A9CB2A5A7D360045E1D2 /* SignUpModuleBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
