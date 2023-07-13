@@ -6,7 +6,7 @@
 //
 
 enum ErrorTypes: String {
-    case EmptyField = "Empty field(s)"
+    case EmptyField = "Empty field"
     
     //errors related to username
     case UsernameIsTaken = "This username is already taken"
@@ -14,10 +14,12 @@ enum ErrorTypes: String {
     
     //errors related to email
     case EmailIsRegistered = "This email is already registered"
+    case EmailIsNotRegistered = "This email is not registered"
     case InvalidEmail = "Invalid email"
     
     //errors related to password
     case InvalidPassword = "Password must be at least 8 characters long"
     case NotMatchingPasswords = "Passwords should match"
+    case WrongPassword = "Wrong password"
     
 }

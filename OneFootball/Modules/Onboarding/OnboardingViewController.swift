@@ -43,7 +43,7 @@ final class OnboardingViewController: UIViewController {
     
     private lazy var firstIndicatorDotView: UIView = {
         let view = UIView()
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = .label
         view.layer.cornerRadius = 6
         return view
     }()
@@ -119,8 +119,10 @@ final class OnboardingViewController: UIViewController {
     }
     
     @objc private func skipButtonClicked() {
-        navigationController?.dismiss(animated: false)
+        //push to sign up page
         navigationController?.pushViewController(SignUpModuleBuilder.build(), animated: false)
+        //remove current onboarding page from navigation stack
+        navigationController?.viewControllers.removeFirst(1)
     }
     
     @objc private func nextButtonClicked() {
@@ -129,19 +131,21 @@ final class OnboardingViewController: UIViewController {
         if visibleCellIndexPathRow != 3 {
             onboardingCollectionView.scrollToItem(at: IndexPath(row: visibleCellIndexPathRow + 1, section: 0), at: [], animated: false)
         } else {
-            navigationController?.dismiss(animated: false)
+            //push to sign up page
             navigationController?.pushViewController(SignUpModuleBuilder.build(), animated: false)
+            //remove current onboarding page from navigation stack
+            navigationController?.viewControllers.removeFirst(1)
         }
         
         switch visibleCellIndexPathRow {
         case 0:
-            secondIndicatorDotView.backgroundColor = .systemBackground
+            secondIndicatorDotView.backgroundColor = .label
             firstIndicatorDotView.backgroundColor = .gray
         case 1:
-            thirdIndicatorDotView.backgroundColor = .systemBackground
+            thirdIndicatorDotView.backgroundColor = .label
             secondIndicatorDotView.backgroundColor = .gray
         case 2:
-            fourthIndicatorDotView.backgroundColor = .systemBackground
+            fourthIndicatorDotView.backgroundColor = .label
             thirdIndicatorDotView.backgroundColor = .gray
         default:
             ()

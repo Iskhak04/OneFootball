@@ -15,4 +15,11 @@ final class SignUpRouter {
 
 extension SignUpRouter: SignUpRouterProtocol {
     
+    func goToSignIn() {
+        //push to sign in page
+        viewController?.navigationController?.pushViewController(SignInModuleBuilder.build(), animated: false)
+        //remove sign up page from navigation stack
+        viewController?.navigationController?.viewControllers.removeFirst(1)
+    }
+    
 }

@@ -15,6 +15,7 @@ protocol SignUpPresenterProtocol {
     
     //View -> Presenter
     func newUserData(user: User)
+    func goToSignIn()
     
     //Interactor -> Presenter
     func signUpError(errors: [ErrorModel])
@@ -27,5 +28,5 @@ protocol SignUpInteractorProtocol {
 
 //Conforms Router, Presenter -> Router
 protocol SignUpRouterProtocol {
-    
+    func goToSignIn()
 }

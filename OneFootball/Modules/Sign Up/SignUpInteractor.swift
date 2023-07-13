@@ -16,13 +16,18 @@ final class SignUpInteractor {
 extension SignUpInteractor: SignUpInteractorProtocol {
     
     func newUserData(user: User) {
-        let errors = checkUserData(user: user)
+        var errors = checkUserData(user: user)
         
         if errors.count == 0 {
-            //no error, register a new user
+            //try to register a new user
             Auth.auth().createUser(withEmail: user.email, password: user.password) { authResult, error in
-                if error == nil {
-                    
+                if authResult == nil {
+                    errors.append(ErrorModel(errorType: .email, errorMessage: ErrorTypes.EmailIsRegistered.rawValue))
+                    //email is already registered, send error status to presenter
+                    self.presenter?.signUpError(errors: errors)
+                } else {
+                    //user is successfuly registered
+                    print("registered")
                 }
             }
         } else  {
@@ -33,7 +38,7 @@ extension SignUpInteractor: SignUpInteractorProtocol {
     
 }
 
-func checkUserData(user: User) -> [ErrorModel] {
+private func checkUserData(user: User) -> [ErrorModel] {
     var errors: [ErrorModel] = []
     
     let characterSet = CharacterSet(charactersIn: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789")
@@ -80,14 +85,14 @@ func checkUserData(user: User) -> [ErrorModel] {
     return errors
 }
 
-func isValidPassword(password: String) -> Bool {
+private func isValidPassword(password: String) -> Bool {
     let passwordRegex = "^(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z]).{8,}$"
     let passwordPred = NSPredicate(format: "SELF MATCHES %@", passwordRegex)
 
     return passwordPred.evaluate(with: password)
 }
 
-func isValidEmail(email: String) -> Bool {
+private func isValidEmail(email: String) -> Bool {
     let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
     let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegex)
     

@@ -13,7 +13,6 @@ final class CustomTextFieldView: UIView {
     
     lazy var customWordLabel: UILabel = {
         let label = UILabel()
-        label.textColor = .systemBackground
         label.font = UIFont(name: Fonts.MontserratMedium.rawValue, size: 20)
         return label
     }()
@@ -22,7 +21,7 @@ final class CustomTextFieldView: UIView {
         let view = UIView()
         view.layer.cornerRadius = 10
         view.layer.borderWidth = 1
-        view.layer.borderColor = UIColor.systemBackground.cgColor
+        view.layer.borderColor = UIColor.label.cgColor
         return view
     }()
     
@@ -30,7 +29,6 @@ final class CustomTextFieldView: UIView {
         let textField = UITextField()
         textField.autocapitalizationType = .none
         textField.autocorrectionType = .no
-        textField.textColor = .systemBackground
         textField.font = UIFont(name: Fonts.MontserratRegular.rawValue, size: 18)
         return textField
     }()
@@ -38,7 +36,7 @@ final class CustomTextFieldView: UIView {
     lazy var revealButton: UIButton = {
         let button = UIButton()
         button.setImage(UIImage(systemName: "eye.slash", withConfiguration: UIImage.SymbolConfiguration(pointSize: 15, weight: .medium, scale: .large)), for: .normal)
-        button.tintColor = .systemBackground
+        button.tintColor = .label
         button.addTarget(self, action: #selector(revealButtonClicked), for: .touchUpInside)
         return button
     }()

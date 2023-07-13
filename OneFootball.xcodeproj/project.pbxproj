@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		320759602A5FCA950079C84C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207595F2A5FCA950079C84C /* SignInViewController.swift */; };
+		320759622A5FCA990079C84C /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320759612A5FCA990079C84C /* SignInPresenter.swift */; };
+		320759642A5FCA9E0079C84C /* SignInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320759632A5FCA9E0079C84C /* SignInInteractor.swift */; };
+		320759662A5FCAA20079C84C /* SignInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320759652A5FCAA20079C84C /* SignInRouter.swift */; };
+		320759682A5FCAA70079C84C /* SignInModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320759672A5FCAA70079C84C /* SignInModuleBuilder.swift */; };
+		3207596A2A5FCAAC0079C84C /* SignInProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320759692A5FCAAC0079C84C /* SignInProtocols.swift */; };
 		322FC2F62A5AED8B002AC47D /* CustomTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322FC2F52A5AED8B002AC47D /* CustomTextFieldView.swift */; };
 		323C6AA92A587D18004264BE /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323C6AA82A587D17004264BE /* OnboardingViewController.swift */; };
 		323C6AAC2A587E96004264BE /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323C6AAB2A587E96004264BE /* OnboardingCollectionViewCell.swift */; };
@@ -47,6 +53,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3207595F2A5FCA950079C84C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		320759612A5FCA990079C84C /* SignInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
+		320759632A5FCA9E0079C84C /* SignInInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInInteractor.swift; sourceTree = "<group>"; };
+		320759652A5FCAA20079C84C /* SignInRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRouter.swift; sourceTree = "<group>"; };
+		320759672A5FCAA70079C84C /* SignInModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModuleBuilder.swift; sourceTree = "<group>"; };
+		320759692A5FCAAC0079C84C /* SignInProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInProtocols.swift; sourceTree = "<group>"; };
 		322FC2F52A5AED8B002AC47D /* CustomTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldView.swift; sourceTree = "<group>"; };
 		323C6AA82A587D17004264BE /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		323C6AAB2A587E96004264BE /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -102,6 +114,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3207595E2A5FCA800079C84C /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				3207595F2A5FCA950079C84C /* SignInViewController.swift */,
+				320759612A5FCA990079C84C /* SignInPresenter.swift */,
+				320759632A5FCA9E0079C84C /* SignInInteractor.swift */,
+				320759652A5FCAA20079C84C /* SignInRouter.swift */,
+				320759672A5FCAA70079C84C /* SignInModuleBuilder.swift */,
+				320759692A5FCAAC0079C84C /* SignInProtocols.swift */,
+			);
+			path = "Sign In";
+			sourceTree = "<group>";
+		};
 		322FC2F42A5AED7C002AC47D /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +146,7 @@
 		323C6AA52A587CC4004264BE /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				3207595E2A5FCA800079C84C /* Sign In */,
 				32C0A9C12A5A7D0A0045E1D2 /* Sign Up */,
 				323C6AA72A587CEA004264BE /* Onboarding */,
 			);
@@ -399,15 +425,21 @@
 				32C0A9C32A5A7D230045E1D2 /* SignUpViewController.swift in Sources */,
 				32E6FF272A586BF30081E31B /* AppDelegate.swift in Sources */,
 				32C0A9C72A5A7D2D0045E1D2 /* SignUpInteractor.swift in Sources */,
+				320759662A5FCAA20079C84C /* SignInRouter.swift in Sources */,
 				32A714792A5D8C31000E6662 /* ErrorModel.swift in Sources */,
+				320759602A5FCA950079C84C /* SignInViewController.swift in Sources */,
 				32A714752A5D8917000E6662 /* ErrorTypes.swift in Sources */,
 				323C6AAC2A587E96004264BE /* OnboardingCollectionViewCell.swift in Sources */,
+				3207596A2A5FCAAC0079C84C /* SignInProtocols.swift in Sources */,
 				32E6FF292A586BF30081E31B /* SceneDelegate.swift in Sources */,
 				32C0A9C52A5A7D280045E1D2 /* SignUpPresenter.swift in Sources */,
+				320759622A5FCA990079C84C /* SignInPresenter.swift in Sources */,
 				323C6AE72A5886F7004264BE /* Fonts.swift in Sources */,
 				323C6AA92A587D18004264BE /* OnboardingViewController.swift in Sources */,
 				32C0A9CB2A5A7D360045E1D2 /* SignUpModuleBuilder.swift in Sources */,
 				32A714772A5D8A7A000E6662 /* Error.swift in Sources */,
+				320759642A5FCA9E0079C84C /* SignInInteractor.swift in Sources */,
+				320759682A5FCAA70079C84C /* SignInModuleBuilder.swift in Sources */,
 				322FC2F62A5AED8B002AC47D /* CustomTextFieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -27,14 +27,13 @@ final class OnboardingCollectionViewCell: UICollectionViewCell {
     
     lazy var bottomView: UIView = {
         let view = UIView()
-        view.backgroundColor = .label
+        view.backgroundColor = .systemBackground
         view.layer.cornerRadius = 30
         return view
     }()
     
     lazy var mainFeatureLabel: UILabel = {
         let label = UILabel()
-        label.textColor = .systemBackground
         label.textAlignment = .center
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
@@ -44,7 +43,6 @@ final class OnboardingCollectionViewCell: UICollectionViewCell {
     
     lazy var mainFeatureDescriptionLabel: UILabel = {
         let label = UILabel()
-        label.textColor = .systemBackground
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
         label.textAlignment = .center
@@ -55,8 +53,8 @@ final class OnboardingCollectionViewCell: UICollectionViewCell {
     lazy var nextButton: UIButton = {
         let button = UIButton()
         button.setTitle("Next", for: .normal)
-        button.backgroundColor = .systemBackground
-        button.setTitleColor(.label, for: .normal)
+        button.backgroundColor = .label
+        button.setTitleColor(.systemBackground, for: .normal)
         button.layer.cornerRadius = 15
         button.titleLabel?.font = UIFont(name: Fonts.MontserratSemiBold.rawValue, size: 18)
         return button
