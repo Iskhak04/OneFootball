@@ -15,4 +15,12 @@ final class SignUpPresenter {
 
 extension SignUpPresenter: SignUpPresenterProtocol {
     
+    func signUpError(errors: [ErrorModel]) {
+        view?.signUpError(errors: errors)
+    }
+    
+    func newUserData(user: User) {
+        interactor?.newUserData(user: user)
+    }
+    
 }

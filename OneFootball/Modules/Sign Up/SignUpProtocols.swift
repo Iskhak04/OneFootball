@@ -7,17 +7,22 @@
 
 //Conforms View, Presenter -> View
 protocol SignUpViewProtocol {
-    
+    func signUpError(errors: [ErrorModel])
 }
 
 //Conforms Presenter, View -> Presenter, Interactor -> Presenter
 protocol SignUpPresenterProtocol {
     
+    //View -> Presenter
+    func newUserData(user: User)
+    
+    //Interactor -> Presenter
+    func signUpError(errors: [ErrorModel])
 }
 
 //Conforms Interactor, Presenter -> Interactor
 protocol SignUpInteractorProtocol {
-    
+    func newUserData(user: User)
 }
 
 //Conforms Router, Presenter -> Router

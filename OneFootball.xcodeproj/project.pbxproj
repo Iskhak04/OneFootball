@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		322FC2F62A5AED8B002AC47D /* CustomTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322FC2F52A5AED8B002AC47D /* CustomTextFieldView.swift */; };
 		323C6AA92A587D18004264BE /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323C6AA82A587D17004264BE /* OnboardingViewController.swift */; };
 		323C6AAC2A587E96004264BE /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323C6AAB2A587E96004264BE /* OnboardingCollectionViewCell.swift */; };
 		323C6AE72A5886F7004264BE /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323C6AE62A5886F7004264BE /* Fonts.swift */; };
@@ -29,6 +30,10 @@
 		327D37612A599E440077FFC2 /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 327D374F2A599E440077FFC2 /* Montserrat-BoldItalic.ttf */; };
 		327D37622A599E440077FFC2 /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 327D37502A599E440077FFC2 /* Montserrat-BlackItalic.ttf */; };
 		327D37632A599E440077FFC2 /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 327D37512A599E440077FFC2 /* Montserrat-Italic.ttf */; };
+		32A714732A5D87CF000E6662 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A714722A5D87CF000E6662 /* User.swift */; };
+		32A714752A5D8917000E6662 /* ErrorTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A714742A5D8917000E6662 /* ErrorTypes.swift */; };
+		32A714772A5D8A7A000E6662 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A714762A5D8A7A000E6662 /* Error.swift */; };
+		32A714792A5D8C31000E6662 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A714782A5D8C31000E6662 /* ErrorModel.swift */; };
 		32C0A9C32A5A7D230045E1D2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C0A9C22A5A7D230045E1D2 /* SignUpViewController.swift */; };
 		32C0A9C52A5A7D280045E1D2 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C0A9C42A5A7D280045E1D2 /* SignUpPresenter.swift */; };
 		32C0A9C72A5A7D2D0045E1D2 /* SignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C0A9C62A5A7D2D0045E1D2 /* SignUpInteractor.swift */; };
@@ -42,6 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		322FC2F52A5AED8B002AC47D /* CustomTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldView.swift; sourceTree = "<group>"; };
 		323C6AA82A587D17004264BE /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		323C6AAB2A587E96004264BE /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		323C6AE62A5886F7004264BE /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
@@ -64,6 +70,10 @@
 		327D374F2A599E440077FFC2 /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
 		327D37502A599E440077FFC2 /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
 		327D37512A599E440077FFC2 /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
+		32A714722A5D87CF000E6662 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		32A714742A5D8917000E6662 /* ErrorTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTypes.swift; sourceTree = "<group>"; };
+		32A714762A5D8A7A000E6662 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		32A714782A5D8C31000E6662 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
 		32C0A9C22A5A7D230045E1D2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		32C0A9C42A5A7D280045E1D2 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 		32C0A9C62A5A7D2D0045E1D2 /* SignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInteractor.swift; sourceTree = "<group>"; };
@@ -92,6 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		322FC2F42A5AED7C002AC47D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				322FC2F52A5AED8B002AC47D /* CustomTextFieldView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		323C6AA42A587CBC004264BE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +164,10 @@
 		323C6AAE2A58844E004264BE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				32A714722A5D87CF000E6662 /* User.swift */,
+				32A714742A5D8917000E6662 /* ErrorTypes.swift */,
+				32A714762A5D8A7A000E6662 /* Error.swift */,
+				32A714782A5D8C31000E6662 /* ErrorModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -178,6 +200,7 @@
 		32C0A9C12A5A7D0A0045E1D2 /* Sign Up */ = {
 			isa = PBXGroup;
 			children = (
+				322FC2F42A5AED7C002AC47D /* Views */,
 				32C0A9C22A5A7D230045E1D2 /* SignUpViewController.swift */,
 				32C0A9C42A5A7D280045E1D2 /* SignUpPresenter.swift */,
 				32C0A9C62A5A7D2D0045E1D2 /* SignUpInteractor.swift */,
@@ -370,17 +393,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32A714732A5D87CF000E6662 /* User.swift in Sources */,
 				32C0A9C92A5A7D310045E1D2 /* SignUpRouter.swift in Sources */,
 				32C0A9CD2A5A7D3F0045E1D2 /* SignUpProtocols.swift in Sources */,
 				32C0A9C32A5A7D230045E1D2 /* SignUpViewController.swift in Sources */,
 				32E6FF272A586BF30081E31B /* AppDelegate.swift in Sources */,
 				32C0A9C72A5A7D2D0045E1D2 /* SignUpInteractor.swift in Sources */,
+				32A714792A5D8C31000E6662 /* ErrorModel.swift in Sources */,
+				32A714752A5D8917000E6662 /* ErrorTypes.swift in Sources */,
 				323C6AAC2A587E96004264BE /* OnboardingCollectionViewCell.swift in Sources */,
 				32E6FF292A586BF30081E31B /* SceneDelegate.swift in Sources */,
 				32C0A9C52A5A7D280045E1D2 /* SignUpPresenter.swift in Sources */,
 				323C6AE72A5886F7004264BE /* Fonts.swift in Sources */,
 				323C6AA92A587D18004264BE /* OnboardingViewController.swift in Sources */,
 				32C0A9CB2A5A7D360045E1D2 /* SignUpModuleBuilder.swift in Sources */,
+				32A714772A5D8A7A000E6662 /* Error.swift in Sources */,
+				322FC2F62A5AED8B002AC47D /* CustomTextFieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
