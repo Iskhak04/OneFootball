@@ -15,6 +15,13 @@ final class SignUpRouter {
 
 extension SignUpRouter: SignUpRouterProtocol {
     
+    func goToTabBar() {
+        //push to tab bar
+        viewController?.navigationController?.pushViewController(MainTabBarController(), animated: false)
+        //remove sign up page from navigation stack
+        viewController?.navigationController?.viewControllers.removeFirst(1)
+    }
+    
     func goToSignIn() {
         //push to sign in page
         viewController?.navigationController?.pushViewController(SignInModuleBuilder.build(), animated: false)

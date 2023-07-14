@@ -15,6 +15,10 @@ final class SignInPresenter {
 
 extension SignInPresenter: SignInPresenterProtocol {
     
+    func goToTabBar() {
+        router?.goToTabBar()
+    }
+    
     func signInError(errors: [ErrorModel]) {
         view?.signInError(errors: errors)
     }

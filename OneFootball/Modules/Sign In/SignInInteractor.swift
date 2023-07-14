@@ -23,7 +23,7 @@ extension SignInInteractor: SignInInteractorProtocol {
             Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
                 if error == nil {
                     //user signed in successfully
-                    print("signed in")
+                    self.presenter?.goToTabBar()
                 } else {
                     //user with such email does not exist
                     if error?.localizedDescription == "There is no user record corresponding to this identifier. The user may have been deleted." {

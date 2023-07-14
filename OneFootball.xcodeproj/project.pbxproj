@@ -18,6 +18,14 @@
 		323C6AAC2A587E96004264BE /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323C6AAB2A587E96004264BE /* OnboardingCollectionViewCell.swift */; };
 		323C6AE72A5886F7004264BE /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323C6AE62A5886F7004264BE /* Fonts.swift */; };
 		3250D0412A5A7890008BD20F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3250D0402A5A7890008BD20F /* GoogleService-Info.plist */; };
+		3269188C2A5FFEA5008FDBDF /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3269188B2A5FFEA5008FDBDF /* MainTabBarController.swift */; };
+		3269188F2A5FFF13008FDBDF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3269188E2A5FFF13008FDBDF /* ProfileViewController.swift */; };
+		326918912A6009BB008FDBDF /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326918902A6009BB008FDBDF /* ProfilePresenter.swift */; };
+		326918932A6009BF008FDBDF /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326918922A6009BF008FDBDF /* ProfileInteractor.swift */; };
+		326918952A6009C4008FDBDF /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326918942A6009C4008FDBDF /* ProfileRouter.swift */; };
+		326918972A6009C8008FDBDF /* ProfileModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326918962A6009C8008FDBDF /* ProfileModuleBuilder.swift */; };
+		326918992A6009CD008FDBDF /* ProfileProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326918982A6009CD008FDBDF /* ProfileProtocols.swift */; };
+		3269189B2A60197D008FDBDF /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3269189A2A60197D008FDBDF /* UserModel.swift */; };
 		327D37522A599E440077FFC2 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 327D37402A599E430077FFC2 /* Montserrat-ExtraLight.ttf */; };
 		327D37532A599E440077FFC2 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 327D37412A599E430077FFC2 /* Montserrat-Medium.ttf */; };
 		327D37542A599E440077FFC2 /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 327D37422A599E430077FFC2 /* Montserrat-ExtraLightItalic.ttf */; };
@@ -64,6 +72,14 @@
 		323C6AAB2A587E96004264BE /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		323C6AE62A5886F7004264BE /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		3250D0402A5A7890008BD20F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3269188B2A5FFEA5008FDBDF /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		3269188E2A5FFF13008FDBDF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		326918902A6009BB008FDBDF /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		326918922A6009BF008FDBDF /* ProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
+		326918942A6009C4008FDBDF /* ProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
+		326918962A6009C8008FDBDF /* ProfileModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModuleBuilder.swift; sourceTree = "<group>"; };
+		326918982A6009CD008FDBDF /* ProfileProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileProtocols.swift; sourceTree = "<group>"; };
+		3269189A2A60197D008FDBDF /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		327D37402A599E430077FFC2 /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
 		327D37412A599E430077FFC2 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		327D37422A599E430077FFC2 /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
@@ -146,6 +162,8 @@
 		323C6AA52A587CC4004264BE /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				3269188D2A5FFF0C008FDBDF /* Profile */,
+				3269188A2A5FFE98008FDBDF /* Main Tab Bar */,
 				3207595E2A5FCA800079C84C /* Sign In */,
 				32C0A9C12A5A7D0A0045E1D2 /* Sign Up */,
 				323C6AA72A587CEA004264BE /* Onboarding */,
@@ -194,8 +212,30 @@
 				32A714742A5D8917000E6662 /* ErrorTypes.swift */,
 				32A714762A5D8A7A000E6662 /* Error.swift */,
 				32A714782A5D8C31000E6662 /* ErrorModel.swift */,
+				3269189A2A60197D008FDBDF /* UserModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		3269188A2A5FFE98008FDBDF /* Main Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				3269188B2A5FFEA5008FDBDF /* MainTabBarController.swift */,
+			);
+			path = "Main Tab Bar";
+			sourceTree = "<group>";
+		};
+		3269188D2A5FFF0C008FDBDF /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				3269188E2A5FFF13008FDBDF /* ProfileViewController.swift */,
+				326918902A6009BB008FDBDF /* ProfilePresenter.swift */,
+				326918922A6009BF008FDBDF /* ProfileInteractor.swift */,
+				326918942A6009C4008FDBDF /* ProfileRouter.swift */,
+				326918962A6009C8008FDBDF /* ProfileModuleBuilder.swift */,
+				326918982A6009CD008FDBDF /* ProfileProtocols.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		327D373F2A599D830077FFC2 /* Fonts */ = {
@@ -421,12 +461,17 @@
 			files = (
 				32A714732A5D87CF000E6662 /* User.swift in Sources */,
 				32C0A9C92A5A7D310045E1D2 /* SignUpRouter.swift in Sources */,
+				326918992A6009CD008FDBDF /* ProfileProtocols.swift in Sources */,
 				32C0A9CD2A5A7D3F0045E1D2 /* SignUpProtocols.swift in Sources */,
 				32C0A9C32A5A7D230045E1D2 /* SignUpViewController.swift in Sources */,
 				32E6FF272A586BF30081E31B /* AppDelegate.swift in Sources */,
 				32C0A9C72A5A7D2D0045E1D2 /* SignUpInteractor.swift in Sources */,
+				3269188F2A5FFF13008FDBDF /* ProfileViewController.swift in Sources */,
+				3269188C2A5FFEA5008FDBDF /* MainTabBarController.swift in Sources */,
 				320759662A5FCAA20079C84C /* SignInRouter.swift in Sources */,
 				32A714792A5D8C31000E6662 /* ErrorModel.swift in Sources */,
+				326918932A6009BF008FDBDF /* ProfileInteractor.swift in Sources */,
+				326918972A6009C8008FDBDF /* ProfileModuleBuilder.swift in Sources */,
 				320759602A5FCA950079C84C /* SignInViewController.swift in Sources */,
 				32A714752A5D8917000E6662 /* ErrorTypes.swift in Sources */,
 				323C6AAC2A587E96004264BE /* OnboardingCollectionViewCell.swift in Sources */,
@@ -435,11 +480,14 @@
 				32C0A9C52A5A7D280045E1D2 /* SignUpPresenter.swift in Sources */,
 				320759622A5FCA990079C84C /* SignInPresenter.swift in Sources */,
 				323C6AE72A5886F7004264BE /* Fonts.swift in Sources */,
+				326918912A6009BB008FDBDF /* ProfilePresenter.swift in Sources */,
 				323C6AA92A587D18004264BE /* OnboardingViewController.swift in Sources */,
+				326918952A6009C4008FDBDF /* ProfileRouter.swift in Sources */,
 				32C0A9CB2A5A7D360045E1D2 /* SignUpModuleBuilder.swift in Sources */,
 				32A714772A5D8A7A000E6662 /* Error.swift in Sources */,
 				320759642A5FCA9E0079C84C /* SignInInteractor.swift in Sources */,
 				320759682A5FCAA70079C84C /* SignInModuleBuilder.swift in Sources */,
+				3269189B2A60197D008FDBDF /* UserModel.swift in Sources */,
 				322FC2F62A5AED8B002AC47D /* CustomTextFieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

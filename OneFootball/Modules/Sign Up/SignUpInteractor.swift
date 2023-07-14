@@ -6,6 +6,7 @@
 //
 
 import FirebaseAuth
+import FirebaseDatabase
 
 final class SignUpInteractor {
     
@@ -27,7 +28,14 @@ extension SignUpInteractor: SignUpInteractorProtocol {
                     self.presenter?.signUpError(errors: errors)
                 } else {
                     //user is successfuly registered
-                    print("registered")
+
+                    let signedInUser = Auth.auth().currentUser
+                                        
+                    let databaseRef = Database.database().reference(withPath: "users/\(signedInUser!.uid)")
+                                        
+                    databaseRef.child("username").setValue(user.username)
+                    
+                    self.presenter?.goToTabBar()
                 }
             }
         } else  {

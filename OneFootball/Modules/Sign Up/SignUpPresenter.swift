@@ -15,6 +15,10 @@ final class SignUpPresenter {
 
 extension SignUpPresenter: SignUpPresenterProtocol {
     
+    func goToTabBar() {
+        router?.goToTabBar()
+    }
+    
     func goToSignIn() {
         router?.goToSignIn()
     }

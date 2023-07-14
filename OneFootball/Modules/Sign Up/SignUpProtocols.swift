@@ -19,6 +19,7 @@ protocol SignUpPresenterProtocol {
     
     //Interactor -> Presenter
     func signUpError(errors: [ErrorModel])
+    func goToTabBar()
 }
 
 //Conforms Interactor, Presenter -> Interactor
@@ -29,4 +30,5 @@ protocol SignUpInteractorProtocol {
 //Conforms Router, Presenter -> Router
 protocol SignUpRouterProtocol {
     func goToSignIn()
+    func goToTabBar()
 }
